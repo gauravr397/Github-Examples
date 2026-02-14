@@ -2,7 +2,7 @@ name: conditional
 on: [push]
 jobs:
     if-condition-passed:
-        if: github.repository == 'gauravr397/Github-Examples'
+        if: ${{ contains(github.repository, 'gauravr397/Github-Examples') }}
         runs-on: ubuntu-latest
         steps:
             - name: See exactly what the variable contains
