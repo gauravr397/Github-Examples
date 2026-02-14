@@ -1,0 +1,8 @@
+name: single-event
+on : [push]
+jobs:
+    single-event:
+        runs-on: ubuntu-latest
+        steps:
+            - name: single-event
+              run: echo "hello owrld" 
