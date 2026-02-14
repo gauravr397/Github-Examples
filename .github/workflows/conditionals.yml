@@ -1,7 +1,7 @@
 name: conditional
 on: [push]
 jobs:
-    if-condition:
+    if-condition-passed:
         if: github.repository == 'gauravr397/Github-Examples'
         runs-on: ubuntu-latest
         steps:
