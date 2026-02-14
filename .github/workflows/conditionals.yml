@@ -5,6 +5,8 @@ jobs:
         if: github.repository == 'gauravr397/Github-Examples'
         runs-on: ubuntu-latest
         steps:
+            - name: See exactly what the variable contains
+              run: echo "The repo name is: ${{ github.repository }}"
             - name: "codition-check"
               run: echo "condition passed"
     
@@ -13,3 +15,5 @@ jobs:
         steps:
             - name: conditon-skipped
               run: echo "condition skiped running"
+            - name: See exactly what the variable contains
+              run: echo "The repo name is: ${{ github.repository }}"
