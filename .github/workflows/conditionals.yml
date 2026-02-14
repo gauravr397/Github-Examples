@@ -1,8 +1,25 @@
+# name: conditional
+# on: [push]
+# jobs:
+#     if-condition:
+#         if: github.repository == 'octo/octo'
+#         runs-on: ubuntu-latest
+#         steps:
+#             - name: "codition-check"
+#               run: echo "condition passed"
+    
+#     codintion-skiped:
+#         runs-on: ubuntu-latest
+#         steps:
+#             - name: conditon-skipped
+#               run: echo "condition skiped running"
+
+
 name: conditional
 on: [push]
 jobs:
     if-condition:
-        if: github.repository == 'octo/octo'
+        if: github.repository == 'gauravr397/Github-Examples'
         runs-on: ubuntu-latest
         steps:
             - name: "codition-check"
