@@ -10,3 +10,11 @@ jobs:
         steps:
             - name: Run Script
               run: echo "Event type - $GITHUB_EVENT_NAME"
+
+
+# curl -L \
+#   -X POST \
+#   -H "Accept: application/vnd.github+json" \
+#   -H "Authorization: token <here>" \
+#   https://api.github.com/repos/gauravr397/Github-Examples/dispatches \
+#   -d '{"event_type": "webhook", "client_payload": {"unit": false, "integration": true}}'
