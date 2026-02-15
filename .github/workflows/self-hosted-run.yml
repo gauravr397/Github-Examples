@@ -10,3 +10,5 @@ jobs:
                 echo "running on nitro5"
                 uname -a
                 lsb_release -a
+                hostname -i
+                hostnamectl
