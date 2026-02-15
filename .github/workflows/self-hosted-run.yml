@@ -1,0 +1,12 @@
+name : self-hosted
+on:
+    [push]
+jobs:
+    self-hosted:
+        runs-on: self-hosted
+        steps:
+            - name: who am i ?
+              run: |
+                echo "running on nitro5"
+                uname -a
+                lsb_release -a
