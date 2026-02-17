@@ -7,8 +7,8 @@ jobs:
         steps:
             - name: github context
               run: |
-                echo "Hello $myactor"
-                echo "Hello $myaction"
+                echo "Hello ${{github.action_status}}"
+                echo "Hello ${{github.actor}}"
               env:
                 myaction: ${{github.action}}
                 myactor: ${{github.actor}}
