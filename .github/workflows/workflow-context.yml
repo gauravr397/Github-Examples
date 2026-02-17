@@ -1,0 +1,14 @@
+name: wf-context
+on: [push]
+
+jobs:
+    wf-context-step:
+        runs-on: ubuntu-latest
+        steps:
+            - name: github context
+              run: |
+                echo "Hello $myactor"
+                echo "Hello $myaction"
+              env:
+                myaction: ${{github.action}}
+                myactor: ${{github.actor}}
